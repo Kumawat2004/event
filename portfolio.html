@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bright Candle Events – Crafting Unforgettable Weddings</title>
+    <link rel="shortcut icon" href="./images/fevicon.png" type="image/x-icon" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="stylesheet" href="./css/ourstory.css?v=2">
+
+    <link rel="stylesheet" href="./css/portfolio.css">
+  </head>
+<body>
+    
+    <!-- navbar section -->
+<div id="navbar-placeholder" class="sticky-top"></div>
+
+<!-- Hero Section with Banner -->
+<section class="service-hero-section">
+  <div class="service-hero-content fade-left">
+    <h1>Our Portfolio</h1>
+    <p>
+      At Bright Candle Events & Weddings, we offer end-to-end event solutions designed to reflect your unique vision.
+      From planning to execution, décor to coordination — every service we provide is rooted in creativity, care,
+      and a commitment to making your celebration truly exceptional.
+    </p>
+  </div>
+</section>
+
+<!-- portfolio-section -->
+
+<section class="portfolio-circle-section py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">
+      Our Portfolio
+    </h2>
+    <div class="row g-4 justify-content-center">
+      
+      <!-- Card 1 -->
+      <div class="col-md-4 col-sm-6 text-center">
+        <div class="circle-card">
+          <img src="./images/memories1.jpg" alt="#Parivarik Milan 2025" class="circle-img ">
+          <h5 class="circle-title mt-3">#Parivarik Milan 2025</h5>
+          <p class="circle-subtitle">ITC Momentos, Udaipur</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4 col-sm-6 text-center">
+        <div class="circle-card">
+          <img src="./images/portfolio2.jpg" alt="#TanishqAshi" class="circle-img">
+          <h5 class="circle-title mt-3">#TanishqAshi</h5>
+          <p class="circle-subtitle">Raffles, Udaipur</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4 col-sm-6 text-center">
+        <div class="circle-card">
+          <img src="./images/portfolio3.jpg" alt="#VardhmanAkshjaa" class="circle-img">
+          <h5 class="circle-title mt-3">#VardhmanAkshjaa</h5>
+          <p class="circle-subtitle">Umaid Palace, Jaipur</p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-md-4 col-sm-6 text-center">
+        <div class="circle-card">
+          <img src="./images/portfolio4.jpg" alt="#SimranRohit" class="circle-img">
+          <h5 class="circle-title mt-3">#SimranRohit</h5>
+          <p class="circle-subtitle">City Palace, Udaipur</p>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col-md-4 col-sm-6 text-center">
+        <div class="circle-card">
+          <img src="./images/portfolio5.jpg" alt="#NavyaYash" class="circle-img">
+          <h5 class="circle-title mt-3">#NavyaYash</h5>
+          <p class="circle-subtitle">Fairmont, Jaipur</p>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col-md-4 col-sm-6 text-center">
+        <div class="circle-card">
+          <img src="./images/portfolio6.jpg" alt="#DivyaKaran" class="circle-img">
+          <h5 class="circle-title mt-3">#DivyaKaran</h5>
+          <p class="circle-subtitle">Leela Palace, Delhi</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+    
+<!-- footer section -->
+
+<div id="footer-placeholder"></div>
+
+<!-- script  -->
+
+    <script>
+    fetch('navbar.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
+
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+  </script>
+
+   <script>
+  const fadeElements = document.querySelectorAll( '.fade-up, .fade-down, .fade-left, .fade-right, .zoom-in, .flip-in, .rotate-in, .bounce-in');
+
+  function revealOnScroll() {
+    fadeElements.forEach((el) => {
+      const windowHeight = window.innerHeight;
+      const elementTop = el.getBoundingClientRect().top;
+
+      if (elementTop < windowHeight - 100) {
+        el.classList.add('show');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll);
+</script>
+
+    <!-- Bootstrap JS -->
+    <script  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

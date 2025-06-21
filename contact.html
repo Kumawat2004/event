@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bright Candle Events – Crafting Unforgettable Weddings</title>
+    <link rel="shortcut icon" href="./images/fevicon.png" type="image/x-icon" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="stylesheet" href="./css/contact.css">
+
+  </head>
+<body>
+    
+    <!-- navbar section -->
+<div id="navbar-placeholder" class="sticky-top"></div>
+
+<!-- contact section -->
+
+<section class="contact-form py-5">
+  <div class="container contact-section">
+    <h2 class="text-center mb-2 section-title">SAY HI TO OUR PLANNERS</h2>
+    <p class="text-center subheading">Plan Your Special Day With Event Designer !!</p>
+    <div class="row mt-4">
+      <!-- Left: Contact Form -->
+      <div class="col-md-7">
+        <form>
+          <div class="mb-4">
+            <label class="form-label">Name Of The Couple *</label>
+            <input type="text" class="form-control line-input" required>
+          </div>
+          <div class="mb-4">
+            <label class="form-label">Email Address *</label>
+            <input type="email" class="form-control line-input" required>
+          </div>
+          <div class="mb-4">
+            <label class="form-label">Phone Number</label>
+            <input type="text" class="form-control line-input">
+          </div>
+          <div class="mb-4">
+            <label class="form-label"><i class="bi bi-calendar-event"></i> Date</label>
+            <input type="date" class="form-control line-input">
+          </div>
+          <div class="mb-4">
+            <label class="form-label">Approx. Budget</label>
+            <input type="text" class="form-control line-input">
+          </div>
+          <div class="mb-4">
+            <label class="form-label service-label1">Service Required</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="service1">
+              <label class="form-check-label" for="service1">Photography & Cinematography</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="service2">
+              <label class="form-check-label" for="service2">Wedding Planning & Hospitality</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="service3">
+              <label class="form-check-label" for="service3">Wedding Decor & Designing</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="service4">
+              <label class="form-check-label" for="service4">Venue</label>
+            </div>
+          </div>
+          <button class="btn custom-btn mt-3 btn-outline-light">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Right: Newsletter Box -->
+      <div class="col-md-5">
+        <div class="p-4 newsletter-box">
+          <h4 class="text-center mb-3">Subscribe Our Newsletter</h4>
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Email Address</label>
+              <input type="email" class="form-control line-input">
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn custom-btn btn-outline-light">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    
+<!-- footer section -->
+
+<div id="footer-placeholder"></div>
+
+<!-- script  -->
+
+    <script>
+    fetch('navbar.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
+
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+  </script>
+
+    <!-- Bootstrap JS -->
+    <script  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

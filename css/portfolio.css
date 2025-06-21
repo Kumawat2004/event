@@ -1,0 +1,127 @@
+.service-hero-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  text-align: center;
+  overflow: hidden;
+  padding: 0 1rem;
+  z-index: 1;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.service-hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--overlay-bg); /* semi-transparent overlay */
+  z-index: 0;
+}
+
+.service-hero-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10%;
+  width: 120%;
+  height: 100%;
+  background: url('../images/story-banner.jpg') center center / cover no-repeat;
+  z-index: -1;
+}
+
+.service-hero-content {
+  position: relative;
+  z-index: 0;
+  padding: 1rem;
+}
+
+.service-hero-content h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  color: var(--dropdown-bg);
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.service-hero-content p {
+  font-size: 1.5rem;
+  max-width: 900px;
+  margin: 1rem auto 0;
+  color: var(--dropdown-bg);
+  font-weight: 500;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .service-hero-section {
+    height: 60vh;
+  }
+
+  .service-hero-content h1 {
+    font-size: 2rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .service-hero-content p {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .service-hero-section {
+    height: 50vh;
+  }
+
+  .service-hero-content h1 {
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .service-hero-content p {
+    font-size: 1rem;
+  }
+}
+
+/* portfolio-section */
+
+.circle-img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px dotted #e8c4a5;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.circle-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.circle-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #cc7c4e;
+  margin-bottom: 0.2rem;
+}
+
+.circle-subtitle {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0;
+}
+
+@media (max-width: 576px) {
+  .circle-img {
+    width: 160px;
+    height: 160px;
+  }
+}

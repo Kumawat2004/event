@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bright Candle Events – Crafting Unforgettable Weddings</title>
+    <link rel="shortcut icon" href="./images/fevicon.png" type="image/x-icon" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="stylesheet" href="./css/ourstory.css?v=2">
+
+    
+  </head>
+<body>
+    
+    <!-- navbar section -->
+<div id="navbar-placeholder" class="sticky-top"></div>
+
+<!-- Hero Section with Banner -->
+<section class="service-hero-section">
+  <div class="service-hero-content fade-left">
+    <h1>Our Story</h1>
+    <p>
+      At Bright Candle Events & Weddings, we offer end-to-end event solutions designed to reflect your unique vision.
+      From planning to execution, décor to coordination — every service we provide is rooted in creativity, care,
+      and a commitment to making your celebration truly exceptional.
+    </p>
+  </div>
+</section>
+
+<!-- about section -->
+
+<section class="about-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-5 section-title zoom-in">About Bright Candle</h2>
+
+    <!-- Our Story -->
+    <div class="mb-5 fade-left">
+      <h3 class="mb-3">Our Story</h3>
+      <p>
+        Founded in 2009, <strong>Bright Candle</strong> began with a heartfelt belief—that every celebration deserves to be crafted with emotion, elegance, and excellence. What started as a dream quickly grew into a full-fledged event design and planning company, known for its personalized experiences and impeccable execution.
+      </p>
+      <p>
+        With a presence in both <strong>Mumbai</strong> and <strong>Dubai</strong>, Bright Candle has curated countless unforgettable moments across destinations. At the center of it all is our founder, <strong>Bela Bhatt</strong>, a visionary with a passion for storytelling through events. With a strong background in creative styling and project management, she brings a rare balance of aesthetics and logistics—ensuring each celebration is as seamless as it is spectacular.
+      </p>
+    </div>
+
+    <!-- Our Vision -->
+    <div class="mb-5 fade-right">
+      <h3 class="mb-3">Our Vision</h3>
+      <p>
+        At Bright Candle, we believe that every event is more than a gathering—it’s a <strong>story waiting to be told</strong>. Our vision is to bring those stories to life with intention, creativity, and a touch of sparkle. We immerse ourselves in our clients’ journeys, understanding their dreams and values to transform ideas into unforgettable memories.
+      </p>
+      <blockquote class="blockquote text-muted ps-3 border-start border-3 border-secondary">
+        “I believe every event is a story. And every story deserves to be told beautifully—with intention, love, and a whole lot of sparkle.”  
+        <footer class="blockquote-footer mt-1">Bela Bhatt, Founder</footer>
+      </blockquote>
+    </div>
+
+    <!-- Our Mission -->
+    <div class="mb-5 fade-left">
+      <h3 class="mb-3">Our Mission</h3>
+      <p>
+        At <strong>Bright Candle</strong>, our mission is simple yet profound: <em>To create timeless, heartwarming celebrations that reflect the unique spirit of every client.</em>
+      </p>
+      <p>
+        We are committed to delivering exceptional experiences that combine luxury, creativity, and flawless execution. Every event we craft is built on a foundation of trust, detail-oriented planning, and emotional connection. Through our dedication to excellence, we turn milestones into memories and events into lasting legacies.
+      </p>
+    </div>
+
+    <!-- Global Presence -->
+    <div class="fade-right">
+      <h3 class="mb-3">Global Presence</h3>
+      <p>
+        With established offices in <strong>Mumbai</strong> and <strong>Dubai</strong>, <strong>Bright Candle</strong> is proud to have a growing global footprint. Our work has graced venues across India, the Middle East, and beyond, delivering culturally rich and stylistically diverse experiences tailored to each destination.
+      </p>
+      <p>
+        We specialize in destination weddings and international events, managing cross-border logistics and collaborations with ease. Wherever love and celebration call, Bright Candle is there to answer—with elegance, passion, and a spark of magic.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- founder section -->
+
+<section class="founder-section">
+  <div class="container">
+    <div class="founder-wrapper">
+      <!-- Founder Image -->
+      <div class="founder-image fade-left">
+        <img src="images/founder.png" alt="Bela Bhatt">
+      </div>
+
+      <!-- Founder Text -->
+      <div class="founder-content">
+        <h2 class="section-title zoom-in">Meet the Founder</h2>
+        <p class="fade-right">
+          Founded in 2009, <strong>Bright Candle</strong> was born out of the belief that every celebration should be crafted with emotion, elegance, and excellence. With offices in <strong>Mumbai</strong> and <strong>Dubai</strong>, we specialize in curating unforgettable events with a personal touch and a professional approach.
+        </p>
+        <p class="fade-right">
+          At the heart of Bright Candle is <strong>Bela Bhatt</strong>, whose vision has always been to immerse herself in each celebration, understanding her clients deeply to deliver moments that truly matter. With a background in creative styling and project management, she brings the perfect balance of aesthetics and execution.
+        </p>
+        <blockquote class="fade-right">
+          “I believe every event is a story. And every story deserves to be told beautifully—with intention, love, and a whole lot of sparkle.”
+          <span class="quote-author">— Bela Bhatt, Founder</span>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+    
+<!-- footer section -->
+
+<div id="footer-placeholder"></div>
+
+<!-- script  -->
+
+    <script>
+    fetch('navbar.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
+
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+  </script>
+
+  <script>
+  const fadeElements = document.querySelectorAll( '.fade-up, .fade-down, .fade-left, .fade-right, .zoom-in, .flip-in, .rotate-in, .bounce-in');
+
+  function revealOnScroll() {
+    fadeElements.forEach((el) => {
+      const windowHeight = window.innerHeight;
+      const elementTop = el.getBoundingClientRect().top;
+
+      if (elementTop < windowHeight - 100) {
+        el.classList.add('show');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll);
+</script>
+
+    <!-- Bootstrap JS -->
+    <script  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
